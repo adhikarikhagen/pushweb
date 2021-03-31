@@ -16,7 +16,7 @@
 
         async function subscribe(){
             let sw = await navigator.serviceWorker.ready;
-            let push = sw.pushManager.subscribe({
+            let push = await sw.pushManager.subscribe({
                 userVisibleOnly :true,
                 applicationServerKey:'BLSxos0g_qbsjSbW-LoQE9Mp8cTatvMS3l3OxczYQRjqwebOMtMkyIraTFK6bTtbOX4jw7k78lFxMKM2MqN-Z0U'
             })
