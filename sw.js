@@ -11,6 +11,7 @@ self.addEventListener("activate", function (event) {
 
 self.addEventListener("push", function (event) {
   if (event.data) {
+    console.log(data)
     let data = event.data.json();
     let dts = Math.floor(Date.now());
     const title = data.title;

@@ -21,5 +21,5 @@ let sub = {
     auth: "ZyZowfj5VvVcUSKxqHiZ2Q",
   },
 };
-console.log('HELLO')
-push.sendNotification(sub, "hello khagendra ji");
+let data = { title: "Khagendra", body: "kfjdlaksjdfla" };
+push.sendNotification(sub, JSON.stringify(data));
