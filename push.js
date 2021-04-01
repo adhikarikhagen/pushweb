@@ -21,4 +21,5 @@ let sub = {
     auth: "ZyZowfj5VvVcUSKxqHiZ2Q",
   },
 };
-push.sendNotification(sub, "test message");
+console.log('HELLO')
+push.sendNotification(sub, "hello khagendra ji");
